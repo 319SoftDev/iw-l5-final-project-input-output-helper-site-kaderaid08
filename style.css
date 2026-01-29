@@ -54,9 +54,48 @@ h1{
     top:50px;
     width:1000px;
     height:1000px;
-    border:white solid 5px;
-    background-color:white;
+    border:#c29871 solid 5px;
+    border-radius:20px;
+    background-image:url("https://www.cloudcodepro.com/NYCFAB25/user26/workspace/final_project/loose%20leaf.png");
+    background-repeat: no-repeat;
+    background-size:cover;
     margin:auto;
     left:0;
     right:0;
+}
+.shadepaper{
+    position:absolute;
+    top:50px;
+    width:1000px;
+    height:1000px;
+    border:#c29871 solid 5px;
+    border-radius:20px;
+    background-color: rgb(255, 255, 255);
+    opacity: 50%;
+    margin:auto;
+    left:0;
+    right:0;
+}
+.listcontent{
+    position:absolute;
+    top:170px;
+    width:800px;
+    height:800px;
+    left:235px;
+    font-size:45px;
+    text-align: left;;
+}
+.inputfield{
+    display:flex;
+    flex-direction: row;
+    position:absolute;
+    top:90px;
+    left:450px;
+    align-items: center;
+}
+#taskin{
+    font-size:25px;
+}
+.submit{
+    height:35px;
 }
