@@ -83,7 +83,8 @@ h1{
     height:800px;
     left:235px;
     font-size:45px;
-    text-align: left;;
+    text-align: left;
+    border:5px red solid;
 }
 .inputfield{
     display:flex;
@@ -98,4 +99,9 @@ h1{
 }
 .submit{
     height:35px;
+}
+
+input:checked + .textInput{
+    text-decoration: line-through;
+    color:red;
 }
