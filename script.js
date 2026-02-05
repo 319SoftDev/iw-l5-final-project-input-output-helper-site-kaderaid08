@@ -11,18 +11,20 @@ const timeDisplay = document.querySelector("#timeDisplay");
 
 
 let tasknumber=0;
+let totalTime = 0;
 
 const addTask = () =>{    
-    const timeValue = inTime.value;
-    const totalTime= timeValue + inTime
+    let timeValue = Number(inTime.value);
     const textValue = inText.value;
+    totalTime= totalTime + timeValue;
 
     tasknumber+=1;
     listcontent.innerHTML += `<br><input type="checkbox" id="task${tasknumber}" name="task${tasknumber}" ><label for="task${tasknumber}"> ${textValue}   _____________________   ${timeValue}</label>`;
     inText.value="";
     inTime.value="";
-    taskDisplay.innerHTML=`<h4 style="font-size:30px; text-align:center;">Tasks left:${tasknumber}</h4>`;
-    timeDisplay.innerHTML= `<h4 style="font-size:30px; text-align:center;">Time left:${totalTime}</h4>`;
+    taskDisplay.innerHTML=`<h4 style="font-size:30px; text-align:center;">Tasks left:</h4> <p style="font-size 30px;">${tasknumber}</p>`;
+    timeDisplay.innerHTML=`<h4 style="font-size:30px; text-align:center;">Time left (Mins):</h4> <p style="font-size 30px;">${totalTime}</p>`;
+    console.log(tasknumber);
 }
 submitButton.addEventListener("click", addTask);
 
