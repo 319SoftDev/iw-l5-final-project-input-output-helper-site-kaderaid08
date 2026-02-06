@@ -1,0 +1,142 @@
+* {
+    margin:0;
+}
+
+body{
+    display:flex;
+    text-align:center;
+    justify-content: center;
+    align-content: space-between;
+    flex-direction: column;
+    background-color:#DDAED3 ;
+}
+
+nav{
+    background-color:#f7e0f2;
+    padding:15px;
+    border: solid 15px white;
+}
+h1{
+    font-size:50px;
+    color:#213C51;
+}
+
+
+
+
+ /* list section */
+.list{
+    display:flex;
+    position:absolute;
+    top:150px;
+    border:5px solid rgb(0, 0, 0);
+    width:1200px;
+    height:1120px;
+    margin:auto;
+    left:0;
+    right:0;
+    background-color: #c29871;
+}
+.listHead{
+    position:absolute;
+    border:rgb(0, 0, 0) solid 5px;
+    margin:auto;
+    left:0px;
+    right:0;
+    font-size:20px;
+    padding:20px;
+    top:-5px;
+    width:900px;
+    background-color: #e6e4df;
+}
+.paper{
+    position:absolute;
+    top:50px;
+    width:1000px;
+    height:1000px;
+    border:#c29871 solid 5px;
+    border-radius:20px;
+    background-image:url("https://www.cloudcodepro.com/NYCFAB25/user26/workspace/final_project/loose%20leaf.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin:auto;
+    left:0;
+    right:0;
+}
+.shadepaper{
+    position:absolute;
+    top:50px;
+    width:1000px;
+    height:1000px;
+    border:#c29871 solid 5px;
+    border-radius:20px;
+    background-color: rgb(255, 255, 255);
+    opacity: 50%;
+    margin:auto;
+    left:0;
+    right:0;
+}
+.listcontent{
+    position:absolute;
+    top:170px;
+    width:800px;
+    height:700px;
+    left:235px;
+    font-size:45px;
+    text-align: left;
+    border:5px red solid;
+}
+.inputfield{
+    display:flex;
+    flex-direction: row;
+    position:absolute;
+    top:90px;
+    left:295px;
+}
+#taskin{
+    font-size:25px;
+}
+#timein{
+    font-size:25px;
+}
+.submit{
+    height:35px;
+}
+
+.crossed{
+    text-decoration:line-through;
+}
+.total{
+    display:flex;
+    justify-content: space-between;
+    position:absolute;
+    width:800px;
+    height:170px;
+    bottom:70px;
+    left:235px;
+}
+
+.taskDisplay{
+    border:3px solid rgb(0, 0, 0);
+    width:400px;
+    height:160px;
+    font-size:90px
+}
+.timeDisplay{
+    border:3px solid rgb(0, 0, 0);
+    margin:0px 0px 0px 5px;
+    width:400px;
+    height:160px;
+    font-size: 90px;
+    right:0px;
+}
+/* input:checked + .textInput{
+    text-decoration: line-through;
+    color:red;
+}input:checked + .textInput:before {
+  color:black;
+} */
+
+/* input:checked + .listcontent {
+  color: red;
+} */
